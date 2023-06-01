@@ -1,0 +1,135 @@
+# Project information
+site_name: Splashtop Secure Workspace
+
+# Copyright
+copyright: 'Copyright &copy; 2023. All rights reserved.'
+
+#Configuration
+theme:
+  name: material
+  logo: images/ev-shield.png
+  favicon: images/ev-shield.png
+  custom_dir: overrides
+  palette:
+    - primary: custom
+  font:
+    text: Poppins
+    code: Courier
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.footer 
+    - toc.follow
+    #- toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+  language: 'en'
+
+extra_css:
+  - ./stylesheets/extra.css
+
+# Navigation
+nav:
+   - "Welcome":
+        - index.md
+        - welcome/what-is-ssw.md
+        - welcome/basic-concepts-and-components.md
+        - welcome/organizations-and-roles.md
+   - "Quick start":
+        - quickstart/index.md
+        - quickstart/add-users-and-groups.md
+        - quickstart/minimized-desktop-client.md
+   - "Evaluator": 
+        - evaluation/index.md
+        - evaluation/about-this-guide.md
+        - evaluation/prepare-for-evaluation.md
+        - evaluation/start-the-evaluation.md
+       #- evaluation/manage-organizations.md
+        - evaluation/deploy-test-network-connectors.md
+        - evaluation/add-eval-applications.md
+        - evaluation/add-users-groups-and-policies.md
+        - evaluation/restrict-application-access.md
+        - evaluation/manage-secrets.md
+        - evaluation/grant-temporary-access.md
+        - evaluation/monitor-and-replay.md
+        - evaluation/filter-website-categories.md
+   - "Administrator":
+        - administrator/index.md
+        - administrator/manage-organizations.md
+        - "Deploy connectors": 
+            - administrator/deploy-connectors.md
+            - administrator/select-a-deployment-option.md
+            - administrator/network-identifier.md
+            - administrator/add-a-connector.md
+            - administrator/use-docker.md
+            - administrator/use-helm.md
+            - administrator/use-linux-cmd-line.md
+            - administrator/view-manage-connectors.md
+            - administrator/network-topology.md
+        - "Add applications": 
+            - administrator/add-applications.md
+            - administrator/add-discovered-apps.md
+            - administrator/add-private-applications.md
+            - administrator/add-public-applications.md
+        - "Manage access": 
+            - administrator/manage-users-groups.md
+   - "Auditor":
+        - auditor/index.md
+   - "User":
+        - user/index.md
+
+# Extra
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >- 
+      This site uses cookies to recognize your site visits and preferences, and to measure the effectiveness of the documentation.
+      Your consent helps us to improve the documentation to better suit your needs.
+    actions:
+      - accept
+      - manage
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Submit an issue to tell us more https://github.com/SplashtopInc/ssw-documentation/issues/new/?title=[Feedback]+{title}+-+{url}
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/splashtop
+    - icon: fontawesome/brands/github
+      link: https://github.com/SplashtopInc
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/Splashtop
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/splashtopinc/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/splashtop/
+
+markdown_extensions:
+  - toc:
+      permalink: false
+      title: On this page
+      toc_depth: 2
+  - pymdownx.details
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+      anchor_linenums: true
+  - pymdownx.superfences 
