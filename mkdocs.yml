@@ -30,7 +30,7 @@ theme:
   language: 'en'
 
 extra_css:
-  - ./stylesheets/extra.css
+  - stylesheets/extra.css
 
 # Navigation
 nav:
