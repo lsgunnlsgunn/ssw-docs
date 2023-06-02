@@ -9,6 +9,7 @@ Public applications are applications that you access over the internet using a p
 Adding public applications to Splashtop Secure Workspace requires you to provide information about how users sign in to use the application, including the authentication protocol, the service provider's endpoint URL, and the identity providers that can be used to authenticate the user signing in. All of this information is highly dependent on the public application service provider.
 
 To add a public application:
+
 1. Sign in to your organization URL using your administrative account.
 
 2. Click **Applications**, then click **Applications**.

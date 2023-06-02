@@ -1,5 +1,5 @@
 ---
-title: Add users
+title: Manage unified policies
 description:
 keywords:
 ---
@@ -11,4 +11,12 @@ You can add users:
 * By sending an email invitation to one or more valid email addresses.
 * By importing accounts from an external identity provider like Google Workplace, Azure Active Directory, Okta, or GitHub.
 
-After users in your organization have a Splashtop Secure Workspace account, you can manage their access rights, organize them into groups, and assign policies and permissions.
+After you add user accounts to your organization using the Splashtop Secure Workspace administrative portal, you can manage their account information, organize them into groups, and assign policies and permissions.
+
+## Add users manually
+
+
+## Send email invitations
+
+
+## Add users from identity providers
