@@ -1,1 +1,9 @@
+# MkDocs output
 site/
+
+# macOS files
+.DS_Store
+
+# Logs
+*.logs
+
