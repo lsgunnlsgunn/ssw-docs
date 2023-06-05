@@ -76,11 +76,27 @@ nav:
             - administrator/add-private-applications.md
             - administrator/add-public-applications.md
         - "Manage access": 
-            - administrator/manage-users-groups.md
+            - administrator/manage-users.md
+            - administrator/manage-groups.md
+            - administrator/manage-unified-policies.md
+            - administrator/manage-conditions.md
+        - "Manage devices": 
+            - administrator/enroll-clients.md
+            - administrator/check-device-posture.md
+            - administrator/configure-device-profiles.md
+            - administrator/download-software.md
+        #- "Monitor activity": administrator/monitor-activity.md
+        #- "Manage secrets": administrator/create-secrets.md
    - "Auditor":
         - auditor/index.md
    - "User":
         - user/index.md
+        #- user/set-preferences.md
+        #- user/launch-applications.md
+        #- user/access-secrets.md
+        #- user/customize-client-settings.md
+        #- user/use-browser-extension.md
+        #- user/use-mobile-client.md
 
 # Extra
 extra:
