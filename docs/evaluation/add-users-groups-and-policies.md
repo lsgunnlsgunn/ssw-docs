@@ -42,7 +42,7 @@ To invite users:
 
     ![Invite by email](../images/ev-invite-user-fields.png)
 
-2. Click **Save** to send the email invitation.
+2. Click **Invite** to send the email invitation.
     
 ### Activate the new account
 
