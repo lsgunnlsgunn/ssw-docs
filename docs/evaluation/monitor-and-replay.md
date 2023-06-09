@@ -4,7 +4,8 @@ description:
 keywords:
 ---
 
-Splashtop Secure Workspace provides powerful observation and monitoring capabilities for IT administrators, enabling them to effectively manage and secure the workspace environment.
+By default, Splashtop Secure Workspace displays information about active sessions and records information about sessions that are no longer active to give you visibility into user and application activity both in real-time and in historical context. You can also terminate active sessions individually or as a bulk operation. For example, if you see suspicious activity, you can select multiple active sessions, the click **Bulk Terminate** to close all of the sessions at once.
+
 
 ## Events
 
