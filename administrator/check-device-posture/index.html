@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-users-manually" class="md-skip">
+        <a href="#create-a-security-posture-profile" class="md-skip">
           Skip to content
         </a>
       
@@ -219,7 +219,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../evaluation/" class="md-tabs__link">
+      <a href="../../evaluation/about-this-guide/" class="md-tabs__link">
         Evaluator
       </a>
     </li>
@@ -508,10 +508,6 @@
       
         
           
-            
-          
-        
-          
         
           
         
@@ -535,16 +531,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../evaluation/">Evaluator</a>
-          
-            <label for="__nav_3">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_3">
+          Evaluator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Evaluator" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
@@ -552,9 +542,6 @@
           Evaluator
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-            
           
             
               
@@ -736,6 +723,8 @@
         
           
             
+          
+        
           
         
           
@@ -1106,7 +1095,7 @@
   
     <li class="md-nav__item">
       <a href="../manage-users/" class="md-nav__link">
-        Add users
+        Manage users
       </a>
     </li>
   
@@ -1253,22 +1242,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-users-manually" class="md-nav__link">
-    Add users manually
+  <a href="#create-a-security-posture-profile" class="md-nav__link">
+    Create a security posture profile
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-email-invitations" class="md-nav__link">
-    Send email invitations
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-users-from-identity-providers" class="md-nav__link">
-    Add users from identity providers
+  <a href="#_2" class="md-nav__link">
+    
   </a>
   
 </li>
@@ -1304,6 +1293,105 @@
     <li class="md-nav__item">
       <a href="../download-software/" class="md-nav__link">
         Manage organizations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" type="checkbox" id="__nav_4_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_7">
+          Monitor activity
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Monitor activity" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_7">
+          <span class="md-nav__icon md-icon"></span>
+          Monitor activity
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboards/" class="md-nav__link">
+        Dashboards and analytics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view-events/" class="md-nav__link">
+        View and filter events
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monitor-active-sessions/" class="md-nav__link">
+        Monitor active sessions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../record-sessions/" class="md-nav__link">
+        Record sessions
       </a>
     </li>
   
@@ -1441,22 +1529,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#add-users-manually" class="md-nav__link">
-    Add users manually
+  <a href="#create-a-security-posture-profile" class="md-nav__link">
+    Create a security posture profile
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-email-invitations" class="md-nav__link">
-    Send email invitations
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-users-from-identity-providers" class="md-nav__link">
-    Add users from identity providers
+  <a href="#_2" class="md-nav__link">
+    
   </a>
   
 </li>
@@ -1476,17 +1564,41 @@
                 
                   <h1>Check device posture</h1>
                 
-                <p>Before your organization's users can use Splashtop Secure Workspace to access applications and resources, they need to have an account. There are a few different ways you can add users to your organization.
-You can add users:</p>
+                <p>Splashtop Secure Workspace includes several important devices management features to ensure that devices that connect to organization resources meet the security requirements you want to enforce.
+For example, you can create security posture profiles to check that desktop and mobile devices meet specific security standards before they connect to private applications or remote resources in the organization and periodically during active sessions to verify the device remains compliant after the initial connection is established. 
+You can create multiple security posture profiles to tailor the security requirements for different types of devices, different operating systems, and different groups.</p>
+<h2 id="create-a-security-posture-profile">Create a security posture profile</h2>
+<p>With a security posture profile, you can define a set of conditions to check for a set of devices and the scheudle for how frequently the conditions should be evaluated.</p>
+<p>To create a security posture profile:</p>
+<ol>
+<li>
+<p>Sign in with your administrative account to open the Splashtop Secure Workspace administrative portal.</p>
+</li>
+<li>
+<p>Click <strong>Devices</strong>, then click <strong>Posture Check</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Add Profile</strong>.</p>
+</li>
+<li>
+<p>Type a descriptive name for the profile.</p>
+<p>For example, if the profile is intended for mobile devices used by members of the Sales team, you might type a description such as <code>Android-Sales-NA</code>.</p>
+</li>
+<li>
+<p>Select a group to a group where this profile applies.</p>
+<p>For example, if the profile is intended for mobile devices used by members of the Sales team, you might select a group such as <code>Sales-NA</code>.</p>
+</li>
+<li>
+<p>Select a schedule for this profile to run.</p>
 <ul>
-<li>By adding account information for each user manually.</li>
-<li>By sending an email invitation to one or more valid email addresses.</li>
-<li>By importing accounts from an external identity provider like Google Workplace, Azure Active Directory, Okta, or GitHub.</li>
+<li>Select <strong>Prior to Connection and</strong>, then select an interval to check the device periodically after a successful connection.</li>
+<li>Select <strong>Prior to Connection Only</strong> if you only want to check the security posture before allowing a connection to applications or organization resources.</li>
 </ul>
-<p>After you add user accounts to your organization using the Splashtop Secure Workspace administrative portal, you can manage their account information, organize them into groups, and assign policies and permissions.</p>
-<h2 id="add-users-manually">Add users manually</h2>
-<h2 id="send-email-invitations">Send email invitations</h2>
-<h2 id="add-users-from-identity-providers">Add users from identity providers</h2>
+</li>
+<li></li>
+</ol>
+<h2 id="_1"></h2>
+<h2 id="_2"></h2>
                 
                   
                 
