@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#set-sign-on-options" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1041,9 +1046,62 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Add public applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Add public applications
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-sign-on-options" class="md-nav__link">
+    Set sign-on options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-group-and-policy-options" class="md-nav__link">
+    Set group and policy options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-identity-provider-options" class="md-nav__link">
+    Set identity provider options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-the-application" class="md-nav__link">
+    Save the application
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1457,6 +1515,61 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-sign-on-options" class="md-nav__link">
+    Set sign-on options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-group-and-policy-options" class="md-nav__link">
+    Set group and policy options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-identity-provider-options" class="md-nav__link">
+    Set identity provider options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#save-the-application" class="md-nav__link">
+    Save the application
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -1485,10 +1598,139 @@
 <li>Type the <strong>Display name</strong> to use for the application.</li>
 <li>Select an <strong>Icon</strong> to use for the application.</li>
 </ol>
+<p><img alt="General settings" src="../../images/general-settings-public-app.png" /></p>
 <p>The rest of the information you must provide is highly dependent on the public application service provider. The instructions in the following sections provide a simplified example that you can use as a general model.</p>
-<p>## Set sign-on options</p>
-<p>## Set group and policy options</p>
-<p>## Set identity provider options</p>
+<h2 id="set-sign-on-options">Set sign-on options</h2>
+<p>The information required for the sign-on options depends on whether the public application uses Security Assertion Markup Language (SAML) or Open ID Connect (OIDC) protocol.
+If you aren't sure which sign-on method to select, contact your application service provider before continuing.
+If you know the sign-on method your application service provider uses, see the following sections for the next steps:</p>
+<ul>
+<li><a href="#configure-saml-access">Configure SAML access</a></li>
+<li><a href="#configure-oidc-access">Configure OIDC access</a></li>
+</ul>
+<h3 id="configure-saml-access">Configure SAML access</h3>
+<p>To set the sign-on options for a SAML application:</p>
+<ol>
+<li>
+<p>Select <strong>SAML</strong> as the sign-on method for the public application.</p>
+</li>
+<li>
+<p>(Optional) Specify the URL where users are redirected after signing out, if applicable.</p>
+</li>
+<li>
+<p>Specify the Assertion Consumer Service (ACS) endpoint URL for the service provider that receives and interprets SAML responses.</p>
+</li>
+<li>
+<p>Provide the globally unique Entity ID for the identity or application service provider.</p>
+</li>
+<li>
+<p>Select the format to use when signing in to the application.</p>
+<ul>
+<li>Select <strong>Username</strong> to sign in with an application account identifier.</li>
+<li>Select <strong>Email (Dynamic)</strong> to sign in to an application without preregistering an email address.</li>
+<li>Select <strong>Email</strong> to sign in to an application using a registered email address.</li>
+<li>Select <strong>Transient</strong> to sign in to an application using a temporary access token.</li>
+<li>Select <strong>Persistent</strong> to sign in to an application using an authorized access token that can be refreshed.</li>
+</ul>
+<p>If you select <strong>Email (Dynamic)</strong> for the Name ID format, you can assign users to specific groups based on their Name ID. If a user is a member of multiple groups, the first matched group takes effect.</p>
+</li>
+<li>
+<p>(Optional) Enable <strong>SP-Initiated SSO</strong> if you want to set up a service URL to redirect users to the service provider (SP) site for initiating the SAML authentication request.</p>
+</li>
+<li>
+<p>Click <strong>Add Statement</strong>  to include any additional statements required by the SaaS provider.</p>
+</li>
+<li>
+<p>Review the information in the Details section.</p>
+<p>The Thumbprint is the fingerprint or hash value of the identity provider's metadata. It is used for verification purposes. You can click the <strong>Download</strong> icon to download the metadata document for the identity provider.</p>
+<p>The Certificate is the public certificate for the identity provider. You can click the <strong>Download</strong> icon to download the certificate associated with the identity provider.</p>
+<p><img alt="SAML configuration" src="../../images/saml-sign-on-options.png" /></p>
+</li>
+<li>
+<p>Review the single sign-on information displayed on the right side of the page.</p>
+<ul>
+<li>The Single sign-on URL is URL to initiate the single sign-on process for this application.</li>
+<li>The Federation metadata document is the metadata document containing information about the federation configuration.</li>
+<li>The Entity ID is the globally unique identifier for the identity or service provider.</li>
+</ul>
+<p><img alt="SAML reference information" src="../../images/sign-on-reference.png" /></p>
+</li>
+</ol>
+<h3 id="configure-oidc-access">Configure OIDC access</h3>
+<p>To set the sign-on options for an application that uses OIDC:</p>
+<ol>
+<li>
+<p>Select <strong>OIDC</strong> as the sign-on method for the public application.</p>
+</li>
+<li>
+<p>Copy the unique <strong>Client ID</strong> generated for the application to use it in the configuration.</p>
+</li>
+<li>
+<p>(Optional) Specify the URL where users are redirected after signing out, if applicable.</p>
+</li>
+<li>
+<p>Specify the Assertion Consumer Service (ACS) endpoint URL where the user is redirected after authenticating with the identity provider.</p>
+</li>
+<li>
+<p>(Optional) Enable <strong>SP-Initiated SSO</strong> if you want to set up a service URL to redirect users to the service provider (SP) site for initiating the authentication request.</p>
+</li>
+<li>
+<p>View and copy the generated secret key for the application to use it in the configuration.</p>
+<p><img alt="OIDC configuration" src="../../images/sign-in-OIDC.png" /></p>
+</li>
+<li>
+<p>Review the information displayed on the right side of the page.</p>
+<ul>
+<li>The Authorization URL is used for authorization during the authentication process.</li>
+<li>The Token URL is used for token retrieval during the authentication process.</li>
+<li>The Certificate URL is used to access the certificate used for authentication.</li>
+</ul>
+<p><img alt="OIDC reference information" src="../../images/token-cert.png" /></p>
+</li>
+</ol>
+<h2 id="set-group-and-policy-options">Set group and policy options</h2>
+<p>You can grant users access to public applications through group membership and select the policies to apply for groups that are entitled to access the application.</p>
+<p>To define the groups and policies associated with the public application:</p>
+<ol>
+<li>
+<p>Select one or more groups to allow group members to access to the public application.</p>
+</li>
+<li>
+<p>(Optional) Select application access policies for the application.</p>
+<p>For an example of how to add application-specific policies, see <a href="../../evaluation/restrict-application-access/">Restrict application access</a>.</p>
+<p><img alt="Set entritlement and policy" src="../../images/group-policy-public-app.png" /></p>
+</li>
+</ol>
+<h2 id="set-identity-provider-options">Set identity provider options</h2>
+<p>You can now configure one or more identity providers to authenticate users who access for the public application.</p>
+<p>To configure an identity provider:</p>
+<ol>
+<li>
+<p>Select the identity providers that should be associated with the application.</p>
+<p>By default, the Splashtop Secure Workspace Identity and Access Management (IAM) service is available as an identity provider. 
+To select external identity providers for this public application, you must first add them to Splashtop Secure Workspace.
+For information about adding external identity providers, see <a href="">Manage identity proviers</a>.</p>
+</li>
+</ol>
+<h2 id="save-the-application">Save the application</h2>
+<p>After you have configured access to a public application using the SAML or OIDC settings, you can save the application to make it available to users.</p>
+<p>To save the application:</p>
+<ol>
+<li>
+<p>Review your settings.</p>
+</li>
+<li>
+<p>Copy or download the relevant links and documents for your reference.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong> to add the application to the list of applications.</p>
+<p>By default, access to the application is enabled and the group and policy controls take effect immediately. </p>
+</li>
+<li>
+<p>Click the <strong>Enabled</strong> toggle to turn off access to the application temporarily or if you want to delay deployment.
+By default, the application will be in an active state. Locate the newly created application in the list and deactivate it by clicking on the corresponding Enabled button.</p>
+</li>
+</ol>
                 
                   
                 
