@@ -102,45 +102,38 @@ To set the sign-on options for an application that uses OIDC:
 
     ![OIDC reference information](../images/token-cert.png)
 
-## Set group and policy options
+## Configure access to the application
 
-You can grant users access to public applications through group membership and select the policies to apply for groups that are entitled to access the application.
+After you have configured sign-on method to a public application using the SAML or OIDC settings, you can configure additional settings to provide access to the application and make it available to users.
 
-To define the groups and policies associated with the public application:
+In the remaining steps, you are going to do the following:
+
+* Grant users access to public applications through group membership.
+* Select the policies to apply for groups that are entitled to access the application.
+* Configure one or more identity providers to authenticate users who access for the public application.
+* Save the application.
+
+To configure access to the public application:
 
 1. Select one or more groups to allow group members to access to the public application.
 
-1. (Optional) Select application access policies for the application.
+2. (Optional) Select application access policies for the application.
     
     For an example of how to add application-specific policies, see [Restrict application access](../evaluation/restrict-application-access.md).
 
     ![Set entritlement and policy](../images/group-policy-public-app.png)
 
-## Set identity provider options
-
-You can now configure one or more identity providers to authenticate users who access for the public application.
-
-To configure an identity provider:
-
-1. Select the identity providers that should be associated with the application.
+3. Select at least one identity provider to enable access to the application.
     
     By default, the Splashtop Secure Workspace Identity and Access Management (IAM) service is available as an identity provider. 
-    To select external identity providers for this public application, you must first add them to Splashtop Secure Workspace.
-    For information about adding external identity providers, see [Manage identity proviers]().
+    
+    To select other identity providers for this public application, you must first add them to Splashtop Secure Workspace.
+    For information about adding external identity providers, see [Manage identity providers](./manage-id-providers.md).
 
-## Save the application
+4. Copy or download the relevant links and documents for your reference.
 
-After you have configured access to a public application using the SAML or OIDC settings, you can save the application to make it available to users.
-
-To save the application:
-
-1. Review your settings.
-
-1. Copy or download the relevant links and documents for your reference.
-
-1. Click **Save** to add the application to the list of applications.
+5. Click **Save** to add the application to the list of applications.
     
     By default, access to the application is enabled and the group and policy controls take effect immediately. 
     
-1. Click the **Enabled** toggle to turn off access to the application temporarily or if you want to delay deployment.
-By default, the application will be in an active state. Locate the newly created application in the list and deactivate it by clicking on the corresponding Enabled button.
+6. Click the **Enabled** toggle to turn off access to the application temporarily or if you want to delay deployment.
