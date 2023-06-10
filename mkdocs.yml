@@ -44,7 +44,6 @@ nav:
         - quickstart/add-users-and-groups.md
         - quickstart/minimized-desktop-client.md
    - "Evaluator": 
-        - evaluation/index.md
         - evaluation/about-this-guide.md
         - evaluation/prepare-for-evaluation.md
         - evaluation/start-the-evaluation.md
@@ -85,7 +84,11 @@ nav:
             - administrator/check-device-posture.md
             - administrator/configure-device-profiles.md
             - administrator/download-software.md
-        #- "Monitor activity": administrator/monitor-activity.md
+        - "Monitor activity":
+            - administrator/dashboards.md
+            - administrator/view-events.md
+            - administrator/monitor-active-sessions.md
+            - administrator/record-sessions.md
         #- "Manage secrets": administrator/create-secrets.md
    - "Auditor":
         - auditor/index.md
