@@ -1079,22 +1079,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-group-and-policy-options" class="md-nav__link">
-    Set group and policy options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-identity-provider-options" class="md-nav__link">
-    Set identity provider options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#save-the-application" class="md-nav__link">
-    Save the application
+  <a href="#configure-access-to-the-application" class="md-nav__link">
+    Configure access to the application
   </a>
   
 </li>
@@ -1543,22 +1529,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-group-and-policy-options" class="md-nav__link">
-    Set group and policy options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-identity-provider-options" class="md-nav__link">
-    Set identity provider options
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#save-the-application" class="md-nav__link">
-    Save the application
+  <a href="#configure-access-to-the-application" class="md-nav__link">
+    Configure access to the application
   </a>
   
 </li>
@@ -1688,9 +1660,16 @@ If you know the sign-on method your application service provider uses, see the f
 <p><img alt="OIDC reference information" src="../../images/token-cert.png" /></p>
 </li>
 </ol>
-<h2 id="set-group-and-policy-options">Set group and policy options</h2>
-<p>You can grant users access to public applications through group membership and select the policies to apply for groups that are entitled to access the application.</p>
-<p>To define the groups and policies associated with the public application:</p>
+<h2 id="configure-access-to-the-application">Configure access to the application</h2>
+<p>After you have configured sign-on method to a public application using the SAML or OIDC settings, you can configure additional settings to provide access to the application and make it available to users.</p>
+<p>In the remaining steps, you are going to do the following:</p>
+<ul>
+<li>Grant users access to public applications through group membership.</li>
+<li>Select the policies to apply for groups that are entitled to access the application.</li>
+<li>Configure one or more identity providers to authenticate users who access the public application.</li>
+<li>Save the application.</li>
+</ul>
+<p>To configure access to the public application:</p>
 <ol>
 <li>
 <p>Select one or more groups to allow group members to access to the public application.</p>
@@ -1700,24 +1679,11 @@ If you know the sign-on method your application service provider uses, see the f
 <p>For an example of how to add application-specific policies, see <a href="../../evaluation/restrict-application-access/">Restrict application access</a>.</p>
 <p><img alt="Set entritlement and policy" src="../../images/group-policy-public-app.png" /></p>
 </li>
-</ol>
-<h2 id="set-identity-provider-options">Set identity provider options</h2>
-<p>You can now configure one or more identity providers to authenticate users who access for the public application.</p>
-<p>To configure an identity provider:</p>
-<ol>
 <li>
-<p>Select the identity providers that should be associated with the application.</p>
-<p>By default, the Splashtop Secure Workspace Identity and Access Management (IAM) service is available as an identity provider. 
-To select external identity providers for this public application, you must first add them to Splashtop Secure Workspace.
-For information about adding external identity providers, see <a href="">Manage identity proviers</a>.</p>
-</li>
-</ol>
-<h2 id="save-the-application">Save the application</h2>
-<p>After you have configured access to a public application using the SAML or OIDC settings, you can save the application to make it available to users.</p>
-<p>To save the application:</p>
-<ol>
-<li>
-<p>Review your settings.</p>
+<p>Select at least one identity provider to enable access to the application.</p>
+<p>By default, the Splashtop Secure Workspace Identity and Access Management (IAM) service is available as an identity provider. </p>
+<p>To select other identity providers for this public application, you must first add them to Splashtop Secure Workspace.
+For information about adding external identity providers, see <a href="./manage-id-providers.md">Manage identity providers</a>.</p>
 </li>
 <li>
 <p>Copy or download the relevant links and documents for your reference.</p>
@@ -1727,8 +1693,7 @@ For information about adding external identity providers, see <a href="">Manage 
 <p>By default, access to the application is enabled and the group and policy controls take effect immediately. </p>
 </li>
 <li>
-<p>Click the <strong>Enabled</strong> toggle to turn off access to the application temporarily or if you want to delay deployment.
-By default, the application will be in an active state. Locate the newly created application in the list and deactivate it by clicking on the corresponding Enabled button.</p>
+<p>Click the <strong>Enabled</strong> toggle to turn off access to the application temporarily or if you want to delay deployment.</p>
 </li>
 </ol>
                 
