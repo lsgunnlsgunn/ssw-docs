@@ -110,7 +110,7 @@ In the remaining steps, you are going to do the following:
 
 * Grant users access to public applications through group membership.
 * Select the policies to apply for groups that are entitled to access the application.
-* Configure one or more identity providers to authenticate users who access for the public application.
+* Configure one or more identity providers to authenticate users who access the public application.
 * Save the application.
 
 To configure access to the public application:
